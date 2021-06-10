@@ -123,7 +123,7 @@ function Comics() {
       <title>Comic your life!</title>
         
       <div className="comic-title">
-        COMIC your LIFE
+        COMIC YOUR LIFE
       </div>
 
       <div className="container">
