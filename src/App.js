@@ -121,7 +121,11 @@ function Comics() {
   return (
     <>
       <title>Comic your life!</title>
-      
+        <p>
+          <span>
+            COMIC your LIFE
+          </span>
+        </p>
       <img src={logo} alt="comic" className="img-header" />
       <div className="container">
         <div className="Buttons">
