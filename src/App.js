@@ -68,6 +68,7 @@ function Comics() {
   };
 
   const previousComic = () => {
+    setUserInput("");
     if (comicNum > 1) {
       if (comicNum === 405) {
         setComicNum(comicNum - 2);
@@ -78,6 +79,7 @@ function Comics() {
   };
 
   const nextComic = () => {
+    setUserInput("");
     if (comicNum < latestComic - 2) {
       if (comicNum === 403) {
         setComicNum(comicNum + 2);
@@ -90,6 +92,7 @@ function Comics() {
   };
 
   const randComic = () => {
+    setUserInput("");
     let min = Math.ceil(1);
     let max = Math.floor(latestComic);
     let randomComic = Math.floor(Math.random() * (max - min + 1)) + min;
