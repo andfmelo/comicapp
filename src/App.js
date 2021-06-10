@@ -30,8 +30,7 @@ function Comics() {
   }, []);
 
   const dailyComic = async () => {
-    //('http://cors-anywhere.herokuapp.com/https://xkcd.com/' + comicNum + '/info.0.json');
-    const response = await fetch("https://xkcd.com//info.0.json");
+    const response = await fetch("https://mycorsproxy-comicapp.herokuapp.com/https://xkcd.com//info.0.json");
 
     const comic = await response.json();
     setComic(comic);
@@ -53,7 +52,7 @@ function Comics() {
 
   const getComic = async () => {
     const response = await fetch(
-      "https://xkcd.com/" + comicNum + "/info.0.json"
+      "https://mycorsproxy-comicapp.herokuapp.com/https://xkcd.com/" + comicNum + "/info.0.json"
     );
 
     const comic = await response.json();
