@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +18,90 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  font-size: 45px;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 15px 0px 15px 0px;
+  padding: 5px;
+  width: 12%;
+}
+
+.container {
+  justify-content: center;
+}
+
+.container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Buttons {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.custom-field{
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.custom-field input{
+  border: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 8px 15px;
+  width: 185px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.custom-field .placeholder{
+  position: absolute;
+  left: 12px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: font-size 0.3s ease, color 0.3s ease, top 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+  top: 10px;
+  font-size: 10px;
+  color: #222;
+}
+
+.Input {
+
+  text-align: center;
+}
+
+.inputField {
+  margin-right: 5px;
+  height: 50%;
+}
+
+.inputButton {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.img-header{
+  max-width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
