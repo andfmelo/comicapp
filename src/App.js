@@ -30,6 +30,7 @@ function Comics() {
   }, []);
 
   const dailyComic = async () => {
+    //('http://cors-anywhere.herokuapp.com/https://xkcd.com/' + comicNum + '/info.0.json');
     const response = await fetch("https://xkcd.com//info.0.json");
 
     const comic = await response.json();
