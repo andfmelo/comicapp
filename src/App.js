@@ -7,7 +7,7 @@ import "./App.css";
 
 function Comics() {
   const [comic, setComic] = useState([]);
-  const [comicNum, setComicNum] = useState(400);
+  const [comicNum, setComicNum] = useState(1);
   const [alt, setAlt] = useState("");
   const [num, setNum] = useState(1);
   const [img, setImg] = useState("");
@@ -26,7 +26,6 @@ function Comics() {
       .catch(e => {
         console.log(e);
       })
-      console.log(data);
   }, []);
 
   const dailyComic = async () => {
